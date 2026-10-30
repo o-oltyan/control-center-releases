@@ -1,0 +1,38 @@
+{
+  "name": "Control Center",
+  "identifier": "dev.oltyan.controlcenter.source",
+  "subtitle": "Remote for Control Center on your Mac",
+  "iconURL": "https://raw.githubusercontent.com/o-oltyan/control-center-releases/main/icon.png",
+  "apps": [
+    {
+      "name": "Control Center",
+      "bundleIdentifier": "dev.oltyan.controlcenter.remote",
+      "developerName": "Octavian Oltyan",
+      "subtitle": "Control your Claude sessions from your phone",
+      "localizedDescription": "The iPhone remote for Control Center: see every task's status, answer questions, approve plans and start tasks on your Mac.",
+      "iconURL": "https://raw.githubusercontent.com/o-oltyan/control-center-releases/main/icon.png",
+      "tintColor": "#5E5CE6",
+      "category": "developer",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.2.0",
+          "buildVersion": "15",
+          "date": "2026-10-30",
+          "localizedDescription": "- Mac .dmg releases with in-app updates, iPhone via SideStore; done stays done\n- Stop the repeated Keychain password prompt\n- Question card: don't repeat a preview the question already contains\n- Never ask to approve a draft the user can't see\n- Questions as buttons, readable plans, reliable status and Stop\n- Repos are proposed by Claude after a first look, then approved\n- Projects & lazy worktrees in <root>/<project>/<repo>/<task>\n- Shift+Tab permission modes, quick actions never land in the wrong repo, iPhone navigation\n- iPhone: persist pairing explicitly so it survives reinstalls\n- Phone notifications: clarify they are Control Center events only; no duplicates\n- Notifications: guided ntfy setup with subscribe QR, auto topic, test with delivery status\n- aico via claude.ai connector (OAuth), iPhone over LAN + installer, adaptive board\n- iPhone remote, e2e driver, newest-claude resolution, unattended auto-fix, UI polish",
+          "downloadURL": "https://github.com/o-oltyan/control-center-releases/releases/download/v0.2.0/ControlCenterRemote-0.2.0.ipa",
+          "size": 1041426,
+          "minOSVersion": "26.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Scan the pairing QR code shown on your Mac.",
+          "NSLocalNetworkUsageDescription": "Connect to Control Center running on your Mac."
+        }
+      }
+    }
+  ],
+  "news": []
+}
