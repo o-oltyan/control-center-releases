@@ -16,6 +16,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.3.0",
+          "buildVersion": "21",
+          "date": "2026-10-30",
+          "localizedDescription": "- Themes: Glass, Terminal and Plain\n- Editable keyboard shortcuts\n- Import: list only interactive terminal sessions, read just the start of each file\n- Terminal: pick your terminal app; sessions continued there mirror live into the app\n- Split chats: drag task cards into panes, resizable, remembered across restarts",
+          "downloadURL": "https://github.com/o-oltyan/control-center-releases/releases/download/v0.3.0/ControlCenterRemote-0.3.0.ipa",
+          "size": 1086003,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.2.0",
           "buildVersion": "15",
           "date": "2026-10-30",
