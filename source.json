@@ -16,6 +16,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.4.0",
+          "buildVersion": "30",
+          "date": "2026-11-03",
+          "localizedDescription": "## What's new\n\n### Send images and files to Claude\n- **Images:** paste a screenshot (\u2318V), drag images onto the chat, or use the paperclip. On the iPhone, the + menu has Photo Library, Take Photo and Paste Image. Claude receives the image itself, the same way the terminal sends a pasted screenshot. Large images are shrunk to 2000 px.\n- **Any file:** logs, PDFs, CSVs, specs and code work the same way: paste, drag or pick them on the Mac, or \"Choose File\" on the iPhone. Control Center keeps a copy, tells Claude where it is, and Claude can read it in every permission mode without a prompt. A pasted folder goes in as its path.\n- **In the chat:** images show as thumbnails and files as chips with name, type and size. Click either to open it; the iPhone uses Quick Look.\n- **New Task** accepts images and files on both the Mac and the iPhone, so a task can start from a screenshot or a document.\n- **Terminal sessions** that contain pasted screenshots now show those messages with their images.\n\n### Typing\n- **Return sends** and **Shift+Return adds a new line** at the cursor, everywhere you write to Claude: the reply box, New Task, plan feedback, \"Other\u2026\" answers and quick-action arguments. \u2318Return also sends. While Japanese or other input methods are composing, Return confirms the characters instead of sending.\n\n### Clearer statuses\n- **Needs you** now appears only when Claude is waiting on you: a question, a permission prompt, a plan to approve, a repo proposal, Claude reporting that it is blocked, or a reply that ends with a question.\n- **Done:** a turn that ends with an answer or a progress report.\n- **Paused:** tasks interrupted by an app restart or quit, a terminal handoff, or the Stop button. Paused tasks don't count toward Needs you.\n- The summary Claude writes for itself when it compacts a long conversation is no longer shown as if you had typed it. A small \"Conversation compacted\" divider marks the spot.\n\n### Review fixes stay with the work\n- Automatic review fixes go to the task that opened the PR, matched by its PR or by the branch in any of its worktrees, so a task with PRs in several repos keeps all of them.\n- If that task is busy, the fix waits for the next check instead of opening a new task. Archived tasks are brought back and used, and a worktree for the PR's repo is added when needed.\n- PRs opened outside the app get one \"Review fixes\" task per branch, not one per PR. Existing duplicates are merged into it once they're idle; the duplicates are archived, not deleted.\n- Task cards and the task header show every PR linked to the task.\n\n### Reliability\n- **No crash when changing the permission mode** from the task header, in single or split panes. An unexpected error no longer closes the app.\n- **No more Settings crash** when deleting a quick action or a repository.\n- **Messages sent while Claude is busy are never lost:** they're queued, labelled \"Queued\" in the chat, and sent again after a worktree move or account switch.\n- **No orphaned sessions:** Claude sessions stop when Control Center quits or crashes, and leftovers are cleaned up at launch.\n- **Terminal handoff:**\n  - Replying in the app (after a confirmation) ends the terminal's session and continues here.\n  - Stop ends the terminal session too.\n  - \"Show terminal\" opens the exact Terminal or iTerm2 tab.\n- **Plans:** you can approve a plan with \"Yes, bypass permissions\". In plan mode, repos are chosen on the plan card.",
+          "downloadURL": "https://github.com/o-oltyan/control-center-releases/releases/download/v0.4.0/ControlCenterRemote-0.4.0.ipa",
+          "size": 1216522,
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.3.0",
           "buildVersion": "21",
           "date": "2026-10-30",
@@ -37,7 +46,7 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSCameraUsageDescription": "Scan the pairing QR code shown on your Mac.",
+          "NSCameraUsageDescription": "Take a photo to send to Claude.",
           "NSLocalNetworkUsageDescription": "Connect to Control Center running on your Mac."
         }
       }
